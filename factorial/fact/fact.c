@@ -10,7 +10,7 @@ int main(int argc, char *argv[]) {
     int number = atoi(argv[1]); //Convert the console input argument to an integer
     
     /*It must be verified that the entered number is greater than or equal to zero*/
-       if(number < 0)
+    if(number < 0)
     {
         perror("El núnmero debe ser mayor a cero");
         exit(1);
@@ -41,32 +41,11 @@ int main(int argc, char *argv[]) {
     /*Print the result*/
     if(count == 1)
     {
-        printf("%d es número primo\n",number);
+        printf("%d is a prime number\n",number);
     }
     else
     {
         printf("%d is not a prime number\n",number);
-    }
-
-    /*Implement the function that calculates if the argument is a prime number*/
-    //int count = 0,index = 1;
-    while (index < number)
-    {
-        if(number%index == 0)
-            {
-            count++;
-            }
-        index++;
-    }
-    
-    /*Print the result*/
-    if(count == 1)
-    {
-        printf("%d es número primo\n",number);
-    }
-    else
-    {
-        printf("%d no es número primo\n",number);
     }
     
     return 0;
