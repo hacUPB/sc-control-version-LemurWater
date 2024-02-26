@@ -49,7 +49,7 @@ int main(int argc, char *argv[]) {
     }
 
     /*Implement the function that calculates if the argument is a prime number*/
-    int count = 0,index = 1;
+    //int count = 0,index = 1;
     while (index < number)
     {
         if(number%index == 0)
